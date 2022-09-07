@@ -5,9 +5,9 @@ public class Employee {
     private String fistName;
     private String lastName;
     private String middleName;
-    private int numberOfDepartment = 0;
-    private double salary = 0;
-    private  int id = 0;
+    private int numberOfDepartment;
+    private double salary;
+    private  int id;
     private static int idEmployee = 0;
 
     public Employee(String lastName, String fistName, String middleName, int numberOfDepartment, double salary) {
@@ -16,8 +16,7 @@ public class Employee {
         this.middleName = middleName;
         this.numberOfDepartment = numberOfDepartment;
         this.salary = salary;
-        this.id = idEmployee;
-        idEmployee++;
+        this.id = idEmployee++;
     }
 
     public String getFistName() {
